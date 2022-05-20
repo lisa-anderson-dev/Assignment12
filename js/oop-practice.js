@@ -30,9 +30,10 @@ const Animal = function() {
 // STEP 4
 
 /*
-const Animal = function(msg) {
+const Animal1 = function(msg) {
+    this.msg = msg;
     this.init = function() {
-        console.log((msg));
+        console.log(this.msg);
     }
 }
 */

@@ -43,7 +43,7 @@ const myAlbums = [
     {artist: 'Pearl Jam', title: 'Ten'},
     {artist: 'REM', title: 'Automatic for the People'},
     {artist: 'U2', title: 'Achtung Baby'}
-]
+];
 
 // In code, iterate through the array and programmatically create new Album class instances based on each album within the array. 
 var jbox = new Jukebox();
@@ -55,12 +55,12 @@ window.addEventListener('load', () => {
     let showFavoriteBtn = document.querySelector('#showFavoriteBtn');
 
     // When the user selects an artist/album from the drop down menu and clicks the play button, the play() method should be called for that album.
-    playBtn.addEventListener('click', e => {
+    playBtn.addEventListener('click', () => {
         jbox.albums[playList.value].play();
     });
 
     // When the user clicks the “show my favorite album” button, the favoriteAlbum() method should be called and the user’s favorite album based on number of plays should be displayed in the web page.
-    showFavoriteBtn.addEventListener('click', e => {
+    showFavoriteBtn.addEventListener('click', () => {
         document.querySelector('#favoriteAlbum').innerHTML = jbox.favoriteAlbum();
     });
     
