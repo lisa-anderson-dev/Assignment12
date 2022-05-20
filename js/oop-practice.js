@@ -67,6 +67,7 @@ Animal.prototype.speak = function() {
     } else if (this.type === 'cat') {
         return `The ${this.color} cat is meowing!`;
     }
+    return `The ${this.color} animal is speaking!`;
 }
 
 const bailey = new Animal('dog', 'Pomeranian', 'white', 12, 20);
